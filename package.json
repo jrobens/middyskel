@@ -1,0 +1,27 @@
+{
+  "name": "middytest",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/functions/hello/handler.ts",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules  jest --useStderr --config=jest.config.ts --coverage --reporters default jest-stare"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@middy/core": "^5.2.6",
+    "@middy/util": "^5.2.6"
+  },
+  "devDependencies": {
+    "@middy/http-json-body-parser": "^5.2.6",
+    "@types/aws-lambda": "^8.10.136",
+    "axios-mock-adapter": "^1.22.0",
+    "dotenv": "^16.4.5",
+    "jest": "^29.7.0",
+    "jest-stare": "^2.5.1",
+    "json-schema-to-ts": "^3.0.1",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2"
+  }
+}
